@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "如果您在研究中引用本书，请使用以下信息。"
 title: "物理AI：从自动驾驶到具身智能"
 abstract: "一本关于物理人工智能（Physical AI）的技术书籍，以自动驾驶与具身智能两大载体为主线，系统梳理算法范式、数据引擎、算力底座与安全体系的软硬协同演进。"
-version: v1.0
+version: v1.1
 date-released: "2026-10-11"
 url: "https://github.com/siarch/physical-ai-book"
 license: CC-BY-NC-SA-4.0
