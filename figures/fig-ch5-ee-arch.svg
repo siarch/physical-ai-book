@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="1080" height="620" fill="#ffffff"/>
+
+  <text x="30" y="32" font-size="16" font-weight="bold" fill="#111827">图5-1 汽车E/E架构的三代演进</text>
+
+  <!-- 列标题 -->
+  <text x="180" y="72" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">第一代：分布式架构</text>
+  <text x="540" y="72" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">第二代：域控制架构</text>
+  <text x="900" y="72" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">第三代：区域架构+中央计算</text>
+
+  <!-- 第一列：分布式，散乱ECU -->
+  <rect x="50" y="100" width="56" height="26" rx="6" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <text x="78" y="117" font-size="11" text-anchor="middle" fill="#111827">ECU</text>
+  <rect x="140" y="128" width="56" height="26" rx="6" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <text x="168" y="145" font-size="11" text-anchor="middle" fill="#111827">ECU</text>
+  <rect x="240" y="104" width="56" height="26" rx="6" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <text x="268" y="121" font-size="11" text-anchor="middle" fill="#111827">ECU</text>
+  <rect x="80" y="188" width="56" height="26" rx="6" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <text x="108" y="205" font-size="11" text-anchor="middle" fill="#111827">ECU</text>
+  <rect x="196" y="196" width="56" height="26" rx="6" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <text x="224" y="213" font-size="11" text-anchor="middle" fill="#111827">ECU</text>
+  <rect x="40" y="266" width="56" height="26" rx="6" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <text x="68" y="283" font-size="11" text-anchor="middle" fill="#111827">ECU</text>
+  <rect x="150" y="282" width="56" height="26" rx="6" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <text x="178" y="299" font-size="11" text-anchor="middle" fill="#111827">ECU</text>
+  <rect x="248" y="258" width="56" height="26" rx="6" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <text x="276" y="275" font-size="11" text-anchor="middle" fill="#111827">ECU</text>
+
+  <path d="M 106,113 L 140,138" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 196,138 L 240,118" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 90,126 L 100,188" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 168,154 L 210,196" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 268,130 L 240,196" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 100,214 L 76,266" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 224,222 L 190,282" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 252,214 L 268,258" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 96,282 L 150,292" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 206,290 L 248,274" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 136,201 L 196,207" fill="none" stroke="#9ca3af" stroke-width="1"/>
+
+  <!-- 第二列：域控制，四个域控+跨车身长线 -->
+  <rect x="450" y="104" width="100" height="40" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="500" y="128" font-size="12" text-anchor="middle" fill="#111827">动力域控</text>
+  <rect x="580" y="104" width="100" height="40" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="630" y="128" font-size="12" text-anchor="middle" fill="#111827">座舱域控</text>
+  <rect x="450" y="176" width="100" height="40" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="500" y="200" font-size="12" text-anchor="middle" fill="#111827">底盘域控</text>
+  <rect x="580" y="176" width="100" height="40" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="630" y="200" font-size="12" text-anchor="middle" fill="#111827">智驾域控</text>
+
+  <path d="M 550,124 L 580,124" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 550,196 L 580,196" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 500,144 L 500,176" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 630,144 L 630,176" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- 跨车身长线连到远端传感器/执行器 -->
+  <circle cx="430" cy="300" r="5" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <circle cx="510" cy="318" r="5" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <circle cx="590" cy="318" r="5" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <circle cx="680" cy="300" r="5" fill="#f3f4f6" stroke="#1f2937" stroke-width="1"/>
+  <path d="M 460,144 C 440,220 432,260 431,294" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 490,216 C 496,260 505,290 509,312" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 620,216 C 612,260 596,290 591,312" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <path d="M 672,144 C 682,220 681,260 680,294" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <text x="555" y="348" font-size="11" text-anchor="middle" fill="#6b7280">跨车身长线直连传感器/执行器</text>
+
+  <!-- 第三列：区域+中央计算 -->
+  <rect x="810" y="176" width="180" height="72" rx="8" fill="#ede9fe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="900" y="204" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">中央计算平台</text>
+  <text x="900" y="226" font-size="12" text-anchor="middle" fill="#111827">HPCU</text>
+
+  <rect x="752" y="100" width="96" height="34" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="800" y="121" font-size="12" text-anchor="middle" fill="#111827">左前 Zonal</text>
+  <rect x="952" y="100" width="96" height="34" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="1000" y="121" font-size="12" text-anchor="middle" fill="#111827">右前 Zonal</text>
+  <rect x="752" y="296" width="96" height="34" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="800" y="317" font-size="12" text-anchor="middle" fill="#111827">左后 Zonal</text>
+  <rect x="952" y="296" width="96" height="34" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="1000" y="317" font-size="12" text-anchor="middle" fill="#111827">右后 Zonal</text>
+
+  <!-- 以太网骨干粗线 -->
+  <path d="M 820,134 L 870,176" fill="none" stroke="#374151" stroke-width="5"/>
+  <path d="M 980,134 L 930,176" fill="none" stroke="#374151" stroke-width="5"/>
+  <path d="M 820,296 L 870,248" fill="none" stroke="#374151" stroke-width="5"/>
+  <path d="M 980,296 L 930,248" fill="none" stroke="#374151" stroke-width="5"/>
+  <path d="M 848,117 L 952,117" fill="none" stroke="#374151" stroke-width="5"/>
+  <path d="M 848,313 L 952,313" fill="none" stroke="#374151" stroke-width="5"/>
+  <text x="900" y="276" font-size="11" text-anchor="middle" fill="#374151">车载以太网骨干</text>
+
+  <!-- 演进大箭头 -->
+  <path d="M 330,180 L 380,180 L 380,166 L 414,196 L 380,226 L 380,212 L 330,212 Z" fill="#d1d5db"/>
+  <path d="M 700,180 L 736,180 L 736,166 L 768,196 L 736,226 L 736,212 L 700,212 Z" fill="#d1d5db"/>
+
+  <!-- 每列特征标注 -->
+  <rect x="40" y="400" width="280" height="96" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="180" y="426" font-size="12" font-weight="bold" text-anchor="middle" fill="#111827">线束与算力特征</text>
+  <text x="58" y="450" font-size="12" fill="#374151">· 点对点布线，总长数公里、重数十公斤</text>
+  <text x="58" y="474" font-size="12" fill="#374151">· 算力分散于MCU，功能固化、难OTA</text>
+
+  <rect x="400" y="400" width="280" height="96" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="540" y="426" font-size="12" font-weight="bold" text-anchor="middle" fill="#111827">线束与算力特征</text>
+  <text x="418" y="450" font-size="12" fill="#374151">· 跨域长线仍多，布线复杂度改善有限</text>
+  <text x="418" y="474" font-size="12" fill="#374151">· 算力域内集中，跨域协同能力弱</text>
+
+  <rect x="760" y="400" width="280" height="96" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="900" y="426" font-size="12" font-weight="bold" text-anchor="middle" fill="#111827">线束与算力特征</text>
+  <text x="778" y="450" font-size="12" fill="#374151">· 区域内就近短接，线束大幅减重</text>
+  <text x="778" y="474" font-size="12" fill="#374151">· 算力中央集中，软硬解耦、整车OTA</text>
+
+  <rect x="40" y="530" width="1000" height="40" rx="8" fill="#ede9fe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="540" y="555" font-size="13" text-anchor="middle" fill="#111827">演进主线：算力持续集中、线束持续简化、软件定义能力持续增强</text>
+</svg>

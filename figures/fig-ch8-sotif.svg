@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="960" height="600" fill="#ffffff"/>
+
+  <text x="30" y="32" font-size="16" font-weight="bold" fill="#111827">图8-2 SOTIF四象限：场景可知性与安全性的组合</text>
+
+  <!-- 轴标签 -->
+  <text x="420" y="70" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">已知</text>
+  <text x="760" y="70" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">未知</text>
+  <text x="205" y="180" font-size="13" font-weight="bold" text-anchor="end" fill="#111827">安全</text>
+  <text x="205" y="390" font-size="13" font-weight="bold" text-anchor="end" fill="#111827">不安全</text>
+
+  <!-- 四象限（已知安全面积最大） -->
+  <rect x="220" y="80" width="400" height="200" fill="#dcfce7" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="420" y="170" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">已知 · 安全</text>
+  <text x="420" y="196" font-size="12" text-anchor="middle" fill="#374151">设计与验证已覆盖的常规场景（面积最大）</text>
+
+  <rect x="620" y="80" width="280" height="200" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="760" y="170" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">未知 · 安全</text>
+  <text x="760" y="196" font-size="12" text-anchor="middle" fill="#374151">尚未触及但本身无害的场景</text>
+
+  <rect x="220" y="280" width="400" height="190" fill="#ffedd5" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="420" y="360" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">已知 · 不安全</text>
+  <text x="420" y="386" font-size="12" text-anchor="middle" fill="#374151">已识别的风险场景，通过设计改进予以消除</text>
+
+  <rect x="620" y="280" width="280" height="190" fill="#fee2e2" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="760" y="360" font-size="14" font-weight="bold" text-anchor="middle" fill="#b91c1c">未知 · 不安全</text>
+  <text x="760" y="386" font-size="12" text-anchor="middle" fill="#374151">SOTIF核心战场：预期功能不足引发的风险</text>
+
+  <!-- 轴箭头 -->
+  <path d="M 220,500 L 900,500" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="560" y="522" font-size="12" text-anchor="middle" fill="#374151">场景可知性：已知 → 未知</text>
+  <path d="M 200,470 L 200,80" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="186" y="280" font-size="12" text-anchor="middle" fill="#374151" transform="rotate(-90 186 280)">安全性：不安全 → 安全</text>
+
+  <!-- 收缩箭头：未知不安全 → 已知安全 -->
+  <path d="M 740,330 C 660,290 570,250 500,215" fill="none" stroke="#6b7280" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowhead)"/>
+  <text x="620" y="252" font-size="12" text-anchor="middle" fill="#374151">场景挖掘 + 仿真验证</text>
+
+  <!-- 已知不安全 → 已知安全 -->
+  <path d="M 420,330 L 420,300" fill="none" stroke="#6b7280" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowhead)"/>
+  <text x="434" y="322" font-size="12" fill="#374151">设计改进消除</text>
+
+  <!-- 未知安全 → 已知安全 -->
+  <path d="M 700,180 L 630,180" fill="none" stroke="#6b7280" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowhead)"/>
+  <text x="668" y="168" font-size="11" text-anchor="middle" fill="#374151">场景覆盖扩展</text>
+
+  <!-- 底部结论条 -->
+  <rect x="220" y="540" width="680" height="40" rx="8" fill="#ede9fe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="560" y="565" font-size="13" text-anchor="middle" fill="#111827">通过场景挖掘与仿真验证，未知区域不断收缩，已知安全区域持续扩大</text>
+</svg>

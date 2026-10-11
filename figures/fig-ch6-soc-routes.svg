@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="640" fill="#ffffff"/>
+
+  <text x="30" y="32" font-size="16" font-weight="bold" fill="#111827">图6-1 车载SoC架构演化的三条路线</text>
+
+  <!-- 共同起点 -->
+  <rect x="40" y="280" width="150" height="70" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="115" y="308" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">共同起点</text>
+  <text x="115" y="332" font-size="13" text-anchor="middle" fill="#111827">单片SoC</text>
+
+  <!-- 分支箭头 -->
+  <path d="M 190,300 C 300,240 380,180 470,140" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 190,315 L 470,315" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 190,330 C 300,390 380,450 470,490" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <text x="330" y="200" font-size="12" text-anchor="middle" fill="#6b7280">通用化</text>
+  <text x="330" y="306" font-size="12" text-anchor="middle" fill="#6b7280">专用化</text>
+  <text x="330" y="432" font-size="12" text-anchor="middle" fill="#6b7280">融合化</text>
+
+  <!-- 上路：GPU主导型 -->
+  <rect x="480" y="70" width="480" height="140" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="720" y="100" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">GPU主导型（极致通用）</text>
+  <text x="720" y="126" font-size="13" text-anchor="middle" fill="#111827">代表：NVIDIA DRIVE Thor</text>
+  <text x="508" y="156" font-size="12" fill="#374151">· 高通用性：GPU生态成熟，适配各类算法快速迭代</text>
+  <text x="508" y="180" font-size="12" fill="#374151">· 代价：功耗与成本高，能效比逊于专用架构</text>
+
+  <!-- 中路：DSA主导型 -->
+  <rect x="480" y="245" width="480" height="140" rx="8" fill="#ffedd5" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="720" y="275" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">DSA主导型（极致专用）</text>
+  <text x="720" y="301" font-size="13" text-anchor="middle" fill="#111827">代表：Tesla AI5 / 小鹏图灵 / 蔚来神玑 / 地平线征程6</text>
+  <text x="508" y="331" font-size="12" fill="#374151">· 重NPU轻GPU：围绕自家算法定制领域专用架构</text>
+  <text x="508" y="355" font-size="12" fill="#374151">· 软硬深度绑定：能效最优，但通用性与生态受限</text>
+
+  <!-- 下路：融合扩展型 -->
+  <rect x="480" y="420" width="480" height="140" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="720" y="450" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">融合扩展型</text>
+  <text x="720" y="476" font-size="13" text-anchor="middle" fill="#111827">代表：高通SA8775P舱驾一体 / 瑞萨X5H芯粒扩展</text>
+  <text x="508" y="506" font-size="12" fill="#374151">· 异构均衡：CPU/GPU/NPU按需配比，舱驾一体降本</text>
+  <text x="508" y="530" font-size="12" fill="#374151">· UCIe芯粒弹性扩展：同构/异构芯粒拼装覆盖多档位车型</text>
+
+  <!-- 底部小结 -->
+  <rect x="40" y="580" width="920" height="40" rx="8" fill="#ede9fe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="500" y="605" font-size="13" text-anchor="middle" fill="#111827">三条路线殊途同归：在算力、能效、成本与生态之间寻找各自的平衡点</text>
+</svg>
