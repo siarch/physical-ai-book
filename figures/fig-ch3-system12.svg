@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="960" height="500" fill="#ffffff"/>
+
+  <text x="30" y="32" font-size="16" font-weight="bold" fill="#111827">图3-1 具身智能“系统1/系统2”双层控制架构</text>
+
+  <!-- 输入 -->
+  <rect x="30" y="112" width="180" height="40" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="120" y="137" font-size="13" text-anchor="middle" fill="#111827">自然语言指令+场景语义</text>
+  <path d="M 212,132 L 244,132" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- 系统2 -->
+  <rect x="248" y="80" width="460" height="104" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="478" y="112" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">系统2（慢思考，约 0.5Hz）</text>
+  <text x="478" y="140" font-size="13" text-anchor="middle" fill="#374151">VLM / 世界模型</text>
+  <text x="478" y="166" font-size="11" text-anchor="middle" fill="#6b7280">语义理解 · 任务分解 · 慢速推理</text>
+
+  <!-- 系统2 -> 系统1 -->
+  <path d="M 478,186 L 478,246" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="492" y="222" font-size="11" fill="#6b7280">子任务目标 / 三维路点（Waypoints）</text>
+
+  <!-- 低频回路上行箭头 -->
+  <path d="M 272,246 L 272,186" fill="none" stroke="#6b7280" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrowhead)"/>
+  <text x="280" y="222" font-size="11" fill="#6b7280">低频状态摘要</text>
+
+  <!-- 系统1 -->
+  <rect x="248" y="250" width="460" height="104" rx="8" fill="#ffedd5" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="478" y="282" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">系统1（快反应，约 100Hz）</text>
+  <text x="478" y="310" font-size="13" text-anchor="middle" fill="#374151">扩散策略 / 流匹配动作专家</text>
+  <text x="478" y="336" font-size="11" text-anchor="middle" fill="#6b7280">+ 动作分块（Action Chunking, ACT）</text>
+
+  <!-- 系统1 -> 本体 -->
+  <path d="M 478,356 L 478,406" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="280" y="410" width="396" height="46" rx="8" fill="#ffedd5" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="478" y="438" font-size="13" text-anchor="middle" fill="#111827">电机力矩 / 位置控制 → 机器人本体</text>
+
+  <!-- 传感反馈回路 -->
+  <path d="M 676,433 C 760,433 770,302 712,302" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="748" y="380" font-size="11" text-anchor="middle" fill="#6b7280">传感反馈</text>
+
+  <!-- 右侧注释栏 -->
+  <rect x="790" y="80" width="140" height="274" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="860" y="110" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">解耦设计</text>
+  <text x="860" y="140" font-size="11" text-anchor="middle" fill="#6b7280">语义推理与</text>
+  <text x="860" y="160" font-size="11" text-anchor="middle" fill="#6b7280">高频控制解耦</text>
+  <text x="860" y="196" font-size="11" text-anchor="middle" fill="#6b7280">系统2异步低频</text>
+  <text x="860" y="216" font-size="11" text-anchor="middle" fill="#6b7280">更新子目标</text>
+  <text x="860" y="252" font-size="11" text-anchor="middle" fill="#6b7280">系统1闭环高频</text>
+  <text x="860" y="272" font-size="11" text-anchor="middle" fill="#6b7280">跟踪执行</text>
+  <text x="860" y="308" font-size="11" text-anchor="middle" fill="#6b7280">快慢协同、</text>
+  <text x="860" y="328" font-size="11" text-anchor="middle" fill="#6b7280">互不阻塞</text>
+</svg>

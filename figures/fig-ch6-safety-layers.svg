@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="960" height="470" fill="#ffffff"/>
+
+  <text x="30" y="32" font-size="16" font-weight="bold" fill="#111827">图6-1 物理AI三层安全防御体系与运行时护栏</text>
+
+  <!-- 运行时安全护栏（外层粗描边） -->
+  <rect x="70" y="78" width="640" height="352" rx="16" fill="none" stroke="#1f2937" stroke-width="3"/>
+  <rect x="245" y="66" width="290" height="24" fill="#ffffff"/>
+  <text x="390" y="74" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">运行时安全护栏（物理托底 / RSS / 摩擦圆）</text>
+
+  <!-- 顶层：AI 安全 -->
+  <rect x="120" y="108" width="540" height="92" rx="8" fill="#ede9fe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="390" y="142" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">ISO/PAS 8800 — AI 安全</text>
+  <text x="390" y="172" font-size="12" text-anchor="middle" fill="#374151">数据集 V 模型验证 · GSN 安全论证</text>
+
+  <!-- 中层：SOTIF -->
+  <rect x="120" y="218" width="540" height="92" rx="8" fill="#ede9fe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="390" y="252" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">ISO 21448 — SOTIF 预期功能安全</text>
+  <text x="390" y="282" font-size="12" text-anchor="middle" fill="#374151">ODD 边界定义 · 场景挖掘与覆盖</text>
+
+  <!-- 底层：功能安全 -->
+  <rect x="120" y="328" width="540" height="92" rx="8" fill="#ede9fe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="390" y="362" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">ISO 26262 — 功能安全</text>
+  <text x="390" y="392" font-size="12" text-anchor="middle" fill="#374151">硬件冗余 · 双核锁步 · ECC 纠错</text>
+
+  <!-- 防御纵深箭头 -->
+  <path d="M 770,410 L 770,110" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="800" y="260" font-size="12" fill="#6b7280" text-anchor="middle" transform="rotate(-90 800 260)">防御纵深：从硬件失效到 AI 幻觉</text>
+</svg>

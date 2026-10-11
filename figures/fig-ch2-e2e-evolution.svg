@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="960" height="400" fill="#ffffff"/>
+
+  <text x="30" y="32" font-size="16" font-weight="bold" fill="#111827">图2-1 自动驾驶软件栈范式演进</text>
+
+  <!-- 阶段一 -->
+  <rect x="40" y="58" width="260" height="34" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="170" y="80" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">阶段一：模块化流水线</text>
+
+  <rect x="110" y="115" width="120" height="36" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="170" y="138" font-size="13" text-anchor="middle" fill="#111827">感知</text>
+  <path d="M 170,153 L 170,163" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="110" y="166" width="120" height="36" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="170" y="189" font-size="13" text-anchor="middle" fill="#111827">预测</text>
+  <path d="M 170,204 L 170,214" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="110" y="217" width="120" height="36" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="170" y="240" font-size="13" text-anchor="middle" fill="#111827">规划</text>
+  <path d="M 170,255 L 170,265" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="110" y="268" width="120" height="36" rx="8" fill="#ffedd5" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="170" y="291" font-size="13" text-anchor="middle" fill="#111827">控制</text>
+  <text x="170" y="330" font-size="11" text-anchor="middle" fill="#6b7280">误差级联、接口信息丢失</text>
+
+  <!-- 阶段间箭头 -->
+  <path d="M 306,190 L 336,190" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 阶段二 -->
+  <rect x="340" y="58" width="280" height="34" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="480" y="80" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">阶段二：BEV+Transformer</text>
+
+  <rect x="400" y="115" width="160" height="36" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="480" y="138" font-size="13" text-anchor="middle" fill="#111827">多摄像头 / 雷达</text>
+  <path d="M 480,153 L 480,178" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="395" y="181" width="170" height="36" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="480" y="204" font-size="13" text-anchor="middle" fill="#111827">BEV 特征融合</text>
+  <path d="M 480,219 L 480,244" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="420" y="247" width="120" height="36" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="480" y="270" font-size="13" text-anchor="middle" fill="#111827">规划</text>
+  <text x="480" y="330" font-size="11" text-anchor="middle" fill="#6b7280">统一鸟瞰表征，模块仍分立</text>
+
+  <!-- 阶段间箭头 -->
+  <path d="M 626,190 L 656,190" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 阶段三 -->
+  <rect x="660" y="58" width="260" height="34" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="790" y="80" font-size="13" font-weight="bold" text-anchor="middle" fill="#111827">阶段三：一段式端到端</text>
+
+  <rect x="710" y="115" width="160" height="36" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="790" y="138" font-size="13" text-anchor="middle" fill="#111827">传感器原始数据</text>
+  <path d="M 790,153 L 790,178" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="720" y="181" width="140" height="36" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="790" y="204" font-size="13" text-anchor="middle" fill="#111827">统一大模型</text>
+  <path d="M 790,219 L 790,244" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="705" y="247" width="170" height="36" rx="8" fill="#ffedd5" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="790" y="270" font-size="13" text-anchor="middle" fill="#111827">轨迹 / 控制指令</text>
+  <text x="790" y="330" font-size="11" text-anchor="middle" fill="#6b7280">光子进、动作出</text>
+
+  <text x="480" y="378" font-size="11" text-anchor="middle" fill="#6b7280">演进主线：从人工规则接口到数据驱动的统一表征学习</text>
+</svg>

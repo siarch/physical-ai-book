@@ -1,0 +1,96 @@
+@page {
+  size: A4;
+  margin: 2.2cm 2cm;
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  line-height: 1.8;
+  color: #1f2937;
+  max-width: 44em;
+  margin: 0 auto;
+  font-size: 11pt;
+}
+
+h1 {
+  font-size: 22pt;
+  color: #1f4e79;
+  text-align: center;
+  margin: 1.2em 0 0.4em;
+}
+
+h2 {
+  page-break-before: always;
+  font-size: 15pt;
+  color: #1f4e79;
+  border-bottom: 2px solid #1f4e79;
+  padding-bottom: 0.3em;
+  margin-top: 1.6em;
+}
+
+h3 {
+  font-size: 12.5pt;
+  color: #2a5a8a;
+  margin-top: 1.4em;
+}
+
+p {
+  text-align: justify;
+  margin: 0.8em 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 9.5pt;
+  margin: 1.2em 0;
+  page-break-inside: avoid;
+}
+
+th, td {
+  border: 1px solid #cbd5e1;
+  padding: 6px 9px;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+th {
+  background: #eef2f7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 1.2em auto;
+  page-break-inside: avoid;
+}
+
+code {
+  font-family: Consolas, "Courier New", monospace;
+  background: #f3f4f6;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+ul, ol {
+  padding-left: 1.6em;
+}
+
+li {
+  margin: 0.3em 0;
+}
+
+strong {
+  color: #111827;
+}
+
+/* 目录页不强制分页 */
+h2:first-of-type {
+  page-break-before: avoid;
+}

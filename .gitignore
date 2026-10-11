@@ -1,0 +1,6 @@
+# 不纳入版本库的本地文件
+history20261004.md
+_book.html
+build/
+__pycache__/
+scripts/_split_once.py

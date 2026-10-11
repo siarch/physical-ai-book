@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="960" height="520" fill="#ffffff"/>
+
+  <text x="30" y="32" font-size="16" font-weight="bold" fill="#111827">图1-1 物理AI的感知-认知-行动闭环与两大载体</text>
+
+  <!-- 闭环四节点 -->
+  <rect x="405" y="74" width="150" height="42" rx="8" fill="#ccfbf1" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="480" y="100" font-size="13" text-anchor="middle" fill="#111827">感知（Perception）</text>
+
+  <rect x="625" y="164" width="180" height="42" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="715" y="190" font-size="13" text-anchor="middle" fill="#111827">世界模型（World Model）</text>
+
+  <rect x="400" y="254" width="160" height="42" rx="8" fill="#dbeafe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="480" y="280" font-size="13" text-anchor="middle" fill="#111827">规划决策（Planning）</text>
+
+  <rect x="180" y="164" width="130" height="42" rx="8" fill="#ffedd5" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="245" y="190" font-size="13" text-anchor="middle" fill="#111827">执行（Action）</text>
+
+  <!-- 闭环弧线箭头 -->
+  <path d="M 555,95 C 640,100 700,120 713,160" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 713,210 C 700,250 640,270 565,275" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 395,275 C 320,270 260,250 247,210" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 247,160 C 260,120 320,100 400,95" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <text x="480" y="190" font-size="13" text-anchor="middle" fill="#374151">物理环境反馈</text>
+
+  <!-- 两大载体 -->
+  <rect x="90" y="330" width="360" height="130" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="270" y="360" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">自动驾驶汽车</text>
+  <text x="120" y="390" font-size="13" fill="#374151">· 低自由度（转向 / 油门 / 制动）</text>
+  <text x="120" y="415" font-size="13" fill="#374151">· 结构化道路环境</text>
+  <text x="120" y="440" font-size="13" fill="#374151">· 海量路测数据</text>
+
+  <rect x="510" y="330" width="360" height="130" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="690" y="360" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">具身智能机器人</text>
+  <text x="540" y="390" font-size="13" fill="#374151">· 高自由度（全身多关节）</text>
+  <text x="540" y="415" font-size="13" fill="#374151">· 非结构化环境</text>
+  <text x="540" y="440" font-size="13" fill="#374151">· 数据稀缺</text>
+
+  <!-- 指向共享底座 -->
+  <path d="M 270,462 L 430,478" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M 690,462 L 530,478" fill="none" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="180" y="478" width="600" height="34" rx="8" fill="#ede9fe" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="480" y="500" font-size="13" text-anchor="middle" fill="#111827">共享技术底座：VLA大模型 · 数据闭环 · 端侧SoC · 安全护栏</text>
+</svg>
