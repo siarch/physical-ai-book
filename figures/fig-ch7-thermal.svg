@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <rect width="960" height="500" fill="#ffffff"/>
+
+  <text x="30" y="32" font-size="16" font-weight="bold" fill="#111827">图7-1 热节流导致的端到端推理延迟长尾示意图</text>
+
+  <!-- 热饱和区背景 -->
+  <rect x="520" y="60" width="380" height="360" fill="#ffedd5" opacity="0.55"/>
+  <text x="710" y="84" font-size="12" text-anchor="middle" fill="#9a3412">热饱和区</text>
+
+  <!-- 坐标轴 -->
+  <line x1="90" y1="420" x2="910" y2="420" stroke="#1f2937" stroke-width="1.5"/>
+  <line x1="90" y1="420" x2="90" y2="60" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="905" y="445" font-size="12" text-anchor="end" fill="#1f2937">持续满载时间 →</text>
+  <text x="60" y="70" font-size="12" text-anchor="middle" fill="#1f2937" transform="rotate(-90 60 70)"></text>
+  <text x="42" y="240" font-size="12" text-anchor="middle" fill="#1f2937" transform="rotate(-90 42 240)">单帧推理延迟（ms）</text>
+
+  <!-- Y 轴刻度参考 -->
+  <line x1="86" y1="373" x2="94" y2="373" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="78" y="377" font-size="11" text-anchor="end" fill="#6b7280">50</text>
+  <line x1="86" y1="137" x2="94" y2="137" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="78" y="141" font-size="11" text-anchor="end" fill="#6b7280">300</text>
+
+  <!-- 结温阈值线 -->
+  <line x1="520" y1="420" x2="520" y2="70" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="520" y="58" font-size="12" text-anchor="middle" fill="#dc2626">结温阈值触发 DVFS 降频</text>
+
+  <!-- P50 曲线 -->
+  <path d="M 90,373 L 520,373 L 900,340" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <!-- P99 曲线：阈值前平稳，阈值后尖刺 -->
+  <path d="M 90,345 L 520,345 L 560,205 L 590,330 L 640,118 L 672,322 L 730,137 L 762,315 L 830,180 L 862,308 L 900,300" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+
+  <!-- 尖刺标注 -->
+  <path d="M 640,112 L 640,86" stroke="#dc2626" stroke-width="1.2" marker-end="none"/>
+  <text x="640" y="80" font-size="11" text-anchor="middle" fill="#dc2626">P99 突发尖刺 ≈ 决策盲区</text>
+
+  <!-- 图例 -->
+  <rect x="120" y="70" width="22" height="4" fill="#2563eb"/>
+  <text x="150" y="76" font-size="12" fill="#1f2937">P50（中位延迟）</text>
+  <rect x="270" y="70" width="22" height="4" fill="#dc2626"/>
+  <text x="300" y="76" font-size="12" fill="#1f2937">P99（长尾延迟）</text>
+
+  <text x="480" y="470" font-size="11" text-anchor="middle" fill="#6b7280">示意：热节流后中位延迟仅温和上升，长尾分位出现数量级尖刺——均值尚可容忍，长尾等同失控</text>
+</svg>

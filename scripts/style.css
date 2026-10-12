@@ -90,6 +90,19 @@ strong {
   color: #111827;
 }
 
+/* 专栏/补充框 */
+blockquote {
+  background: #f8fafc;
+  border-left: 4px solid #1f4e79;
+  padding: 0.6em 1.2em;
+  margin: 1.2em 0;
+  page-break-inside: avoid;
+}
+
+blockquote p {
+  margin: 0.5em 0;
+}
+
 /* 目录页不强制分页 */
 h2:first-of-type {
   page-break-before: avoid;
