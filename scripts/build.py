@@ -13,7 +13,7 @@ import subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TITLE = "物理AI：从自动驾驶到具身智能"
-VERSION = "v2.1"
+VERSION = "v2.2"
 COMBINED = ROOT / f"{TITLE}-{VERSION}.md"
 PDF = ROOT / f"{TITLE}-{VERSION}.pdf"
 HTML = ROOT / "_book.html"
